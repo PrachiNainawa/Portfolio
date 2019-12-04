@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "AREAMACR.C": "cpp",
+        "ALLOC.C": "cpp",
+        "GAME.C": "cpp",
+        "PERMUTAT.C": "cpp",
+        "PUZZLE.C": "cpp",
+        "LINKEDLI.C": "cpp",
+        "CALLBYVA.C": "cpp"
+    }
+}
