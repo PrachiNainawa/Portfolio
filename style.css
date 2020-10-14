@@ -200,7 +200,11 @@ nav {
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
 }
-
+@media (max-width:900px) {
+    .jumbotron {
+        height: 100px!important;
+    }
+}
 
 @media (max-width:950px) {
     .tagline {
