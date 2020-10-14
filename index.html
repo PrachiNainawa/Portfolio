@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Prachi's PORTFOLIO</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--  Scroll reveal-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     
 
@@ -18,14 +18,16 @@
     <!--home-->
     <div id="home" class="margin">
     <nav class="navbar navbar-dark fixed-top navbar-expand-md ">
-            <div class='container-fluid'>
+        <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="image/girl.png" height="40" width="40"> </a>
-            <button class="navbar-toggler " data-toggle="collapse" type="button" data-target="#collapsing">
+            <button class="navbar-toggler " data-toggle="collapse" type="button" data-target="#collapsing" 
+            aria-controls="collapsing" aria-expanded="false"
+            aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         <div id="collapsing" class="navbar-collapse  collapse">
         
-        <ul class="navbar-nav nav-fill w-100" >
+        <ul class="navbar-nav nav-fill mt-0 mt-lg-0 w-100" >
             <li class="nav-item">
                 <a href="#home" class="nav-link active">Home</a>
             </li>
@@ -47,20 +49,21 @@
                 <a href="#contact" class="nav-link">Contact</a>
             </li>
         </ul>
-    </div>
-</div>
+        </div>
+        </div>
     </nav>
-    <div class="tagline">
+    <div data-aos="zoom-in-right" data-aos-duration="2000" class="tagline">
     
-    <p> Hi! I'm <span id="pink">PRACHI NAINAWA</span>,
+    <p> नमस्कार! I'm <span id="pink">PRACHI NAINAWA</span>,
         <br>
-            a front end developer.
+            a full stack web developer.
     </p>
     <center>
-    <a href="#services"><div class="btn d-flex justify-content-center align-items-center">
+    <a href="#contact"><div class="btn d-flex justify-content-center align-items-center">
         <span><i class="fas fa-caret-down"></i></span></div></a>
     </center>
-</div></div>
+    </div>
+</div>
     <!--Services-->
     <div id="services" class="margin container-fluid ">
     <div class="margin">
@@ -68,51 +71,77 @@
     <div class="container-fluid padding">
         
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div data-aos="flip-left" data-aos-duration="1000" class="col-sm-4 mb-3 mb-sm-0">
                 <div class="d-flex justify-content-center">
                 <div class="card d-flex justify-content-center">
             
                 <div id="data1" class="data-bg rounded-circle">
-                    <img class="card-img-top image-fluid " src="image/web.png" alt="card image"></img>
+                    <img class="card-img-top image-fluid " src="image/web.png" alt="card image">
                 </div>
-                <h4 class="card-title">Web Designing</h4>
-                <p class="card-text">I can develop and design<br>
+                <h4 class="card-title">Web Development</h4>
+                <p class="card-text">I can develop responsive<br>
                     websites which can be<br>
                      used on any device.</p>
                 </div>
                 </div>
                 </div>
-            <div class="col-sm-6 col-md-4">
+                <div data-aos="flip-up" data-aos-duration="1000" class="col-sm-4 mb-3 mb-sm-0">
                     <div class="d-flex justify-content-center">
                     <div class="card">
                     
                     <div id="data2" class="data-bg rounded-circle">
-                    <img class="card-img-top  image-fluid" src="image/iot.png"  alt="card image"></img>
+                    <img class="card-img-top  image-fluid" src="image/iot.png"  alt="card image">
                     </div>
                     <h4 class="card-title">Internet of Things</h4>
                     <p class="card-text">I can make devices which<br>
                             will be connected to the<br>
                             internet.</p>
                     </div>
-            </div></div>
-            <div class="col-sm-12 col-md-4">
+                </div></div>
+            <div data-aos="flip-right" data-aos-duration="1000" class="col-sm-4 mb-3 mb-sm-0">
                     <div class="d-flex justify-content-center">
                     <div class="card">
                     <div id="data3" class="data-bg rounded-circle">
-                        <img class="card-img-top image-fluid " src="image/cloud-computing (2).png"  alt="card image"></img>
+                        <img class="card-img-top image-fluid " src="image/cloud-computing (2).png"  alt="card image">
                     </div>
                         <h4 class="card-title">Scripting</h4>
                         <p class="card-text">I can develop softwares<br>
                                     which can perform<br>
-                                    some small tasks.</p>
+                                    some specific tasks.</p>
              </div>
             </div></div>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000"class="row mt-0 mt-sm-5">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="d-flex justify-content-center">
+                <div class="card">
+                <div id="data4" class="data-bg rounded-circle">
+                    <img class="card-img-top image-fluid " src="image/teaching.png"  alt="card image">
+                </div>
+                    <h4 class="card-title">Teaching</h4>
+                    <p class="card-text">I can teach full stack<br> 
+                        web development and <br>python
+                        scripting.</p>
+         </div>
+        </div></div>
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="d-flex justify-content-center">
+            <div class="card">
+            <div id="data5" class="data-bg pt-2 rounded-circle">
+                <img class="card-img-top image-fluid " src="image/hacked.png"  alt="card image">
+            </div>
+                <h4 class="card-title">Web Scraping</h4>
+                <p class="card-text">I can extract useful data <br>
+                    from websites by an<br> automated script
+                    to reduce<br> time and work.</p>
+     </div>
+    </div></div>
         </div>
     </div></div>
 
     <!--programming lang-->
 
-    <h2 class="text-center mt-5">Programming Languages</h2>
+    <h2 class="text-center mt-5">Technical Skills</h2>
     <h4 class="text-center">On which I can work</h2>
 
     <div class="container mt-5">
@@ -120,38 +149,47 @@
             <div class="col-md-6">
                 <h4>HTML5</h4>
                         <div class="progress" style="height:20px" >
-                                <div class="progress-bar" style="width:60%;height:20px">60%</div>
-                                <span><i class="fas fa-comment-alt">60%</i></span>
+                                <div  data-aos="fade-right" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;height:20px">70%</div>
+                                
                         </div>
                 <h4>CSS3</h4>
                     <div class="progress" style="height:20px" >
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%;height:20px">50%</div>
+                                <div  data-aos="fade-right" data-aos-duration="1000" class="progress-bar " style="width:50%;height:20px">50%</div>
                     </div>
                 <h4>Javascript</h4>
                     <div class="progress" style="height:20px" >
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;height:20px">60%</div>
+                            <div  data-aos="fade-right" data-aos-duration="1000" class="progress-bar " style="width:75%;height:20px">75%</div>
+                    </div>
+                <h4>BootStrap4</h4>
+                    <div class="progress" style="height:20px" >
+                            <div  data-aos="fade-right" data-aos-duration="1000" class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%;height:20px">85%</div>
                     </div>
                 <h4>mySQL</h4>
                     <div class="progress" style="height:20px" >
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%;height:20px">65%</div>
+                            <div  data-aos="fade-right" data-aos-duration="1000" class="progress-bar " role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%;height:20px">65%</div>
                     </div>
             </div>
             <div class="col-md-6">
                     <h4>Python</h4>
                             <div class="progress" style="height:20px" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;height:20px">80%</div>
+                                    <div data-aos="fade-right" data-aos-duration="1000" class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;height:20px">80%</div>
                             </div>
-                    <h4>Arduino</h4>
+                    <h4>Django</h4>
+                            <div class="progress" style="height:20px" >
+                                    <div data-aos="fade-right" data-aos-duration="1000" class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%;height:20px">65%</div>
+                            </div>
+                    <h4>Beautiful Soup</h4>
+                            <div class="progress" style="height:20px" >
+                                    <div data-aos="fade-right" data-aos-duration="1000" class="progress-bar " role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;height:20px">50%</div>
+                            </div>
+                    <h4>jQuery</h4>
                         <div class="progress" style="height:20px" >
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%;height:20px">50%</div>
+                                <div data-aos="fade-right" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;height:20px">50%</div>
                         </div>
-                    <h4>C</h4>
+                    
+                        <h4>Arduino</h4>
                         <div class="progress" style="height:20px" >
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;height:20px">70%</div>
-                        </div>
-                    <h4>Cpp</h4>
-                        <div class="progress" style="height:20px" >
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%;height:20px">65%</div>
+                                    <div data-aos="fade-right" data-aos-duration="1000" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;height:20px">40%</div>
                         </div>
                 </div>
             </div>
@@ -162,7 +200,7 @@
     <div id="projects" class="margin container">
         <h2 class=" text-center margin">Projects</h2>
         <div class="row mb-5">
-            <div class="col-sm-12 col-md-6">
+            <div data-aos="fade-left" data-aos-duration="1000" class="col-sm-12 col-md-6">
                 <div class="text-center">
                     <h3 class=" mb-4">Weather Forecasting System</h3>
                     <p>It is an IOT (internet of things) based project.
@@ -171,7 +209,7 @@
                             the use of sensors.</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-sm-12 col-md-6">
                 <center>
                  <img  src="image/arduino.jpg">  
                 </center>
@@ -180,12 +218,12 @@
             
 
         <div class="row m-4 mb-5">
-            <div class="col-sm-12 col-md-6">
+            <div data-aos="fade-left" data-aos-duration="1000" class="col-sm-12 mb-4 col-md-6">
                 <center>
-                 <img src="image/website.png"> 
+                 <img src="image/portfolio.png"> 
                 </center> 
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-sm-12 col-md-6">
                 <center>
                     <h3 class=" mb-4">Portfolio Website</h3>
                     <p>It is my first website that you are scrolling right
@@ -196,75 +234,64 @@
                 </center>
             </div>
         </div>
+        <div class="row m-4 mb-5">
+            
+            <div data-aos="fade-left" data-aos-duration="1000" class="col-sm-12 col-md-6">
+                <center>
+                    <h3 class=" mb-4">Notekeeper Mobile App</h3>
+                    <p>It is my first mobile app which I created using flutter framework of dart programming language.
+                         I learned a lot about practical use of oops concepts during that project. It can store, update your 
+                         notes(title,description) with their priority(high,low) using sqlite database.
+                    </p>
+                </center>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-sm-12 col-md-6">
+                <center>
+                 <img src="image/notekeeper.png"> 
+                </center> 
+            </div>
+        </div>
+        <center><a href="https://loginbyprachi.herokuapp.com/" ><button data-aos="zoom-in" data-aos-duration="1000" class="btn">See my django project snippets live</button> </a></center>
     </div>
 
 
     <!--About-->
     <div id="about" >
-    <div class="container-fluid">
+    <div class="container-fluid ">
+        <h2 class="text-center  mb-5">About Me</h2>
         <div class="row mb-3">
-            <div class="col-sm-12 col-md-4">
+            
+            <div class="col-md-4">
                 <img src="image/prachiport.jpg" width="350px;" class="transform img-responsive">
             </div>   
-            <div class="col-sm-12 col-md-6">
-                <h2 class="text-center mb-5">About Me</h2>
-                <p>I,m a <b>front end developer</b> for GeekStairs Technologies 
-                        in <b>India</b>, Rajasthan. I have a great passion for<b> web 
-                        designing</b> and <b>scripting</b>.</p>
-                <p>I'm 18 and currently pursuing <b>B.Tech.</b> in <b>computer science</b> from Rajasthan Technical University.
+            <div class="p-5 col-md-8">
+                
+                <p>I,m a <b>fullstack web developer</b> for Avishkar Tech Solutions
+                        in <b>India</b>, Rajasthan. I have a great passion for <b>software development, web 
+                        development</b> and <b>web scraping</b>.</p>
+                <p>I'm 20 and will be getting my degree of <b>B.Tech.</b> in <b>computer science</b> from Rajasthan Technical University in 2021.
                     I have interest for so many things that's why I can handle different tasks
                      with the same interest.
                     I'm continuously <b>making me better </b>by gaining more and more knowledge 
                     day by day.</p>
-                <p class="mb-5">It was during my studies when I met my <b>fiance</b>,Shubham.</p>
+
                         <div class="container text-center">
-                                <span class="badge badge-pill badge-success">Positivity</span>
-                                <span class="badge badge-pill badge-primary">Hardwork</span>
-                                <span class="badge badge-pill badge-secondary">Smartwork</span>
+                                <span data-aos="flip-up" data-aos-duration="1000" class="badge badge-pill badge-success">Positivity</span>
+                                <span data-aos="flip-down" data-aos-duration="1000" class="badge badge-pill badge-primary">Hardwork</span>
+                                <span data-aos="flip-up" data-aos-duration="1000" class="badge badge-pill badge-secondary">Smartwork</span>
                                
-                                <span class="badge badge-pill badge-danger">Curiosity</span>
-                                <span class="badge badge-pill badge-info">Persistency</span>
-                                <span class="badge badge-pill badge-dark">Having Doubts</span>
-                                <span class="badge badge-pill badge-warning">Big Goals</span>
+                                <span data-aos="flip-down" data-aos-duration="1000" class="badge badge-pill badge-danger">Curiosity</span>
+                                <span data-aos="flip-up" data-aos-duration="1000" class="badge badge-pill badge-info">Persistency</span>
+                                <span data-aos="flip-down" data-aos-duration="1000" class="badge badge-pill badge-dark">Having Doubts</span>
+                                <span data-aos="flip-up" data-aos-duration="1000" class="badge badge-pill badge-warning">Big Goals</span>
                         </div>
-                        
-                
+
             </div>
         </div>
-        <!--achievements-->
-        <div class="container-fluid">
-            <center>
-            <h2 class="mb-5">Achievements</h2>
-            <img class="img-responsive" height:"100%" width:"100%" src="image/journey.png">
-            </center>
-            <div id="slides" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                  <li data-target="#slides" data-slide-to='0' class="active"></li>
-                  <li data-target="#slides" data-slide-to='1' ></li>
-                  <li data-target="#slides" data-slide-to='2' ></li>
-                </ul>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/background0.jpg">
-                    <div class="carousel-caption">
-                        <h1 class="display-2">bootstrap</h1>
-                        <h3>complete website layout</h3>
-                        <button type="button" class='btn btn-outline-light btn-lg'>view demo</button>
-                          <button type="button" class="btn btn-primary btn-lg">get started</button>
-          
-                      </div>
-                  </div>
-                <div class="carousel-item">
-                      <img src="images/background1.jpg">
-                  </div>
-                <div class="carousel-item">
-                      <img src="images/background2.jpg">
-                  </div>
-                </div>
-              </div>          
-        </div>
+       
 
-        
+        <div class="row">
+        <div class="col-12">
         <div class="jumbotron d-flex flex-column justify-content-center">
             <center>
             <quote>“People Who Are Crazy Enough To Think<br>
@@ -272,7 +299,7 @@
                     Ones Who Do.”
             </quote>
         </center>
-        </div>
+        </div></div></div>
     </div>
 </div>
     <!--contact-->
@@ -288,18 +315,18 @@
                     <span>prachinainawa31@gmail.com</span>
                     <br>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>4 A, Sarvritu vilas, near Sagasji temple,
+                    <span>4A, Sarvritu vilas,
                         <br> 
                             Udaipur, India, 313001
                     </span>
                 </div>
                 <div class="col-md-6">
-                    <form action="">
+                    <form action="https://formspree.io/f/xleojlde" method="POST">
                         <div class="form-group">
-                            <input type="text" id="name" class="form-control" placeholder="Enter name" required>
-                            <input type="email" id="email" class="form-control" placeholder="Enter email address" required>
-                            <input type="number" id="number" class="form-control" placeholder="Enter contact number" required>
-                            <textarea id="textarea" class="form-control" >Enter message
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" required>
+                            <input type="email" name="_replyto" id="email" class="form-control" placeholder="Enter email address" required>
+                            <input type="number" name="number" id="number" class="form-control" placeholder="Enter contact number" >
+                            <textarea id="textarea" name="message" class="form-control" required>Enter message
                                 </textarea>
                                 <button type="submit" class="btn">Submit</button>
                         </div>
@@ -318,16 +345,23 @@
        
         
         <footer class="text-center">
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/PrachiNainawa/"><i class="fab fa-github"></i></a>
            
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/NainawaPrachi"><i class="fab fa-twitter"></i></a>
         
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/technology_and_cs/"><i class="fab fa-instagram"></i></a>
        
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <p>PRACHI NAINAWA &copy;copyright.2019</p>
+            <a href="https://www.linkedin.com/in/prachi-nainawa-54a60716b/"><i class="fab fa-linkedin"></i></a>
+            <p>Made by PRACHI NAINAWA, no copyright issues </p>
         </footer>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

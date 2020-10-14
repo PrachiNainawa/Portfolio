@@ -1,9 +1,11 @@
 body, html {
     height: 100%;
-    margin:0;
-    padding:0;
+    margin:0!important;
+    padding-right:0!important;
     font-size:20px;
     font-family:'Gill Sans', sans-serif;
+    width:100%;
+    height:100%;
   }
 #home {
     /* The image used */
@@ -18,7 +20,33 @@ body, html {
     background-size: cover;
     color:white;
   }
+  
+#collapsing{
+    background-color: black;
+    width:100%;
+    
+  }
+nav{
+    width:100%;
+}
 
+.navbar-collapse{
+    border:0;
+
+}
+.nav-item{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.navbar-toggler-icon{
+    height:30px;
+    top:3px;
+    
+}
+.navbar-toggler{
+    margin-bottom: 0;
+}
 .tagline {
     position:absolute;
     top:60%;
@@ -61,6 +89,12 @@ body, html {
 #data3 {
     background-color:#77ECFF;
 }
+#data5 {
+    background-color:rgb(255, 255, 94);
+}
+#data4 {
+    background-color:rgb(156, 80, 226);
+}
 .margin {
     margin-bottom:100px;
 }
@@ -69,13 +103,16 @@ body, html {
     width:300px;
     border:4px solid #FF4081;
 }
-
+#about .col-12{
+    padding:0;
+}
 .jumbotron {
     height:20px;
     background:black;
     color:#FF4081;
     border-radius:0;
-    margin:0;
+    margin:0!important;
+    width:100%!important;
     font-family:'OCR A Std', monospace;
 }
 #pink, h4 {
@@ -115,17 +152,7 @@ h3{
     margin:0;
 }
   
-#about li::before {
-    color: #FF4081;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-    content: "•";
-    font-size: 230%; 
-    padding:0;
-    margin-bottom:0;
-  }
+
 
 #about .col-md-4{
  padding:0;
@@ -135,19 +162,22 @@ h3{
     border:1px ;
     border-top-left-radius: 300px;
     background:white;
+    padding:0;
 }
 #contact {
     background:black;
+    
 }
 footer {
     background:#FF4081;
     color:white;
+    margin:0 !important;
 }
-.fa-facebook,.fa-twitter,.fa-linkedin,.fa-instagram {
+.fa-github,.fa-twitter,.fa-linkedin,.fa-instagram {
     color:white;
 
 }
-#contact button{
+.btn{
     background:#FF4081;
     color:white;
 }
@@ -156,19 +186,35 @@ footer {
     height:30px;
     width:30px;
 }
-#about .container-fluid {
-    padding:0;
-}
+
 #about p {
    
     font-size:1rem;
 }
 nav {
     background:black;
-    height:50px;
+    height:60px;
 }
 .transform {
     border:3px solid #FF4081;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
+}
+
+
+@media (max-width:950px) {
+    .tagline {
+        top:40%;
+        left:20%;
+        font-size: 30px!important;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .tagline {
+        
+        left:20%;
+        
+    }
 }
