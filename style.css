@@ -34,11 +34,7 @@ nav{
     border:0;
 
 }
-.nav-item{
-    margin-top: 0px;
-    margin-bottom: 0px;
 
-}
 .navbar-toggler-icon{
     height:30px;
     top:3px;
@@ -200,16 +196,28 @@ nav {
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
 }
-@media (max-width:900px) {
+
+
+@media (max-width:600px) {
     .jumbotron {
-        height: 100px!important;
+        height: 140px!important;
+    }
+    
+    .tagline {
+        top:40%;
+        left:7%!important;
+        font-size: 250px!important;
+    }
+    #home{
+        background-image: url("image/gif/blacksky.gif");
+        height:90vh;
     }
 }
 
 @media (max-width:950px) {
     .tagline {
         top:40%;
-        left:20%;
+        left:10%;
         font-size: 30px!important;
     }
 }
