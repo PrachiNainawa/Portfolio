@@ -37,12 +37,10 @@ nav{
 
 .navbar-toggler-icon{
     height:30px;
-    top:3px;
+    
     
 }
-.navbar-toggler{
-    margin-bottom: 0;
-}
+
 .tagline {
     position:absolute;
     top:60%;
